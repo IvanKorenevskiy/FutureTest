@@ -1,0 +1,167 @@
+* {
+  font-size: 20px;
+}
+.app {
+  background-color: #F0FFF0;
+}
+.wrapper {
+  margin: 0 20px;
+
+  .app__button {
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;      
+    border: 3px solid rgba(250, 235, 215,1);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    height: 35px;
+    &:hover {
+      box-shadow: 0px 0px 4px 4px rgba(255, 222, 173, 0.63);
+      background: #FFDEAD;
+    }
+  }
+
+  .app__input {
+    width: 200px;    
+    outline: none;
+    border: 3px solid #E6E6FA;
+    box-sizing: border-box;
+    height: 35px; 
+  }
+
+  .header {
+    background: #E6E6FA;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #778899;
+
+   .header__link {
+    margin-left: 50px;
+    font-size: 23px;
+   }
+  }
+//Стили для таблицы
+.table-wrapper{
+  .table-scroll {
+    width: 890px;
+    height: 700px; 
+    overflow: auto;
+  }
+  position: relative;
+  .table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    td {
+      border-top: 3px solid #E6E6FA;      
+      text-align: center;
+      padding: 10px 0;
+    }
+    td:nth-child(1) {
+      width: 70px;
+    }
+    td:nth-child(2) {
+      width: 150px;
+    }
+    td:nth-child(3) {
+      width: 150px;
+    }
+    td:nth-child(4) {
+      width: 350px;
+    }
+    td:nth-child(5) {
+      width: 150px;
+    }
+    .table__body {
+      &:first-child {        
+        td {
+          border-top: none;      
+        }
+      }
+      cursor: pointer;    
+      &:hover {
+        background-color: #F0F8FF;
+      }  
+    }
+    .table__title {
+      td {
+        border-top: none; 
+        font-weight: bold;     
+      }
+      cursor: pointer;    
+      &:hover {
+        background-color: #F0FFF0;
+        td {
+          background-color: #F0F8FF;          
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+  
+//стили для добавления
+  .add-row {
+    width: 1000px;
+    margin: 30px 0;
+    .add-row__warning {
+      font-size: 15px;
+      color: red;
+    }
+  }
+
+//стили для фильтра
+  .filter {
+    margin-top: 30px;
+  }
+
+//стили для стрелки
+  .arrow {
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    display: none;
+  }
+  .arrow--rotate-down {
+    transform: rotate(90deg);
+    display: inline;
+  }
+  .arrow--rotate-upp {
+    transform: rotate(-90deg);
+    display: inline;
+  }
+//стили для нижней строки
+  .under-row {
+    width: 450px;
+    padding: 20px;
+    margin: 30px 0;
+    border: 3px solid #E6E6FA;
+    border-radius: 10px;
+    .under-row__title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+//стили для кнопок выбора
+  .chenge-data {
+    display: flex;
+    justify-content: center;
+    .app__button--start {
+      margin: 40px;
+      height: 70px;
+    }
+  }
+  
+}
+
+
+
